@@ -10,13 +10,9 @@ public class ContaCorrente {
 	
 	public ContaCorrente(Cliente cliente) {
 		this.cliente = cliente;
+		this.setSaldo(0);
 	}
-
-	public ContaCorrente(float saldo, Cliente cliente) {
-		this.saldo = saldo;
-		this.cliente = cliente;
-	}
-
+	
 	public void depositar(float valorDeposito) {
 		this.setSaldo(getSaldo() + valorDeposito);
 	}

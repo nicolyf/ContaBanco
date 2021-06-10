@@ -7,9 +7,10 @@ public class ContaEspecial extends ContaCorrente {
 
 	}
 
-	public ContaEspecial(float saldo, Cliente cliente) {
-		super(saldo, cliente);
+	public ContaEspecial(Cliente cliente) {
+		super(cliente);
 		this.setLimite(4000);
+		this.setSaldo(0);
 	}
 
 	public boolean transferindoConta(ContaCorrente conta) {
